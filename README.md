@@ -7,3 +7,13 @@ Cilj ovog projekta je definirati i analizirati Laplaceovu matricu povezanosti gr
 * __NetworkX__ - za kreiranje grafova i upravljanje njima
 * __NumPy__ - za rad s matricama i algebarske operacije
 * __SciPy__ - za algebarske operacije
+
+## Pokretanje
+
+Nakon što otvorimo datoteku u kojoj se nalazi .ipynb dokument u VisualStudioCode-u, potrebno je odabrati kernel ili stvoriti novi klikom na gumb Select kernel u gornjem desnom kutu:
+
+Slika
+
+te Python enviroments > Create Python enviroment > Venv.
+
+Nakon toga trebamo 
