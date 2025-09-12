@@ -1,0 +1,1 @@
+# Laplaceova_matrica_povezanosti_grafa
