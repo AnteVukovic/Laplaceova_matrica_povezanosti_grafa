@@ -10,10 +10,18 @@ Cilj ovog projekta je definirati i analizirati Laplaceovu matricu povezanosti gr
 
 ## Pokretanje
 
-Nakon što otvorimo datoteku u kojoj se nalazi .ipynb dokument u VisualStudioCode-u, potrebno je odabrati kernel ili stvoriti novi klikom na gumb Select kernel u gornjem desnom kutu:
+Nakon što se otvori datoteka u kojoj se nalazi .ipynb dokument u VisualStudioCode-u, potrebno je odabrati kernel ili stvoriti novi klikom na gumb Select kernel u gornjem desnom kutu:
 
 Slika
 
 te Python enviroments > Create Python enviroment > Venv.
 
-Nakon toga trebamo 
+Nakon toga unutar dokumenta treba dodati novu ćeliju koda s sljedećom naredbom:
+
+```python
+%pip install networkx numpy scipy
+```
+
+Nakon pokretanja te ćelije klikom na gumb Execute cell može se redom pokretati ostale ćelije.
+
+## Funkcije
