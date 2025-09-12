@@ -1,1 +1,2 @@
-# Laplaceova_matrica_povezanosti_grafa
+# Laplaceova matrica povezanosti grafa
+
