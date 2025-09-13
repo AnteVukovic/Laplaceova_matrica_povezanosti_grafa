@@ -85,4 +85,29 @@ def brouwer(evals, P):
             return False
     return True
 ```
+## Testiranje
 
+Na primjeru potpunog multipartitnog grafa sa skupovima veličina 1, 2 i 3 provjerava se broj vršno disjunktnih puteva između nultog i petog vrha. To ćemo dobiti kao
+
+```python
+len(list(nx.node_disjoint_paths(G, 0, 5)))
+```
+
+Slika
+
+Dobija se da između nultog i petog vrha danoga grafa postoje 3 vršno disjunktna puta.
+
+Slika
+
+Nakon toga može se provjeriti valjanost hipoteze za određene primjere grafova. Ovo je prikaz obje strane nejednakosti hipoteze u svakom koraku za potpuni graf sa 6 vrhova.
+
+Slika
+
+| Suma prvih t svojstvenih vrijednosti   | m(G) + (t+3 povrh 4) |
+| -------- | ------- |
+| 0  | 76    |
+| 30 | 80     |
+| 60    | 90    |
+| 90  | 110   |
+| 120  | 145    |
+| 150  | 201    |
