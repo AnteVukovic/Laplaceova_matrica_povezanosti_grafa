@@ -49,7 +49,7 @@ Na koordinate (i, j) i (j, i) matrice P postavlja se broj vršno disjunktnih put
 
 Klasična je Brouwerova hipoteza za Laplaceovu matricu zadana kao
 
-![Brouwer](./images/brouwer.png)
+![Brouwer](./images/brouwer.PNG)
 
 gdje je m broj bridova grafa, a lambde su svojstvene vrijednosti Laplaceove matrice poredane po veličini. Pri modifikaciji za Laplaceovu matricu povezanosti, m će predstavljati ukupan broj vršno disjunktnih puteva u grafu, a binomni će se koeficijent promijenti u t+3 povrh 4.
 
@@ -101,7 +101,7 @@ Dobija se da između nultog i petog vrha danoga grafa postoje 3 vršno disjunktn
 
 Nakon toga može se provjeriti valjanost hipoteze za određene primjere grafova. Ovo je prikaz obje strane nejednakosti hipoteze u svakom koraku za potpuni graf sa 6 vrhova.
 
-!
+![pg6](./images/pg6.PNG)
 
 | Suma prvih t svojstvenih vrijednosti   | m(G) + (t+3 povrh 4) |
 | -------- | ------- |
@@ -116,18 +116,18 @@ Testiranje hipoteze provodilo se i za druge posebne vrste grafova.
 
 Binarno stablo:
 
-![bs](./images/bs.png)
+![bs](./images/bs.PNG)
 
 Kružni ljestvasti graf:
 
-![kljg](./images/kljg.png)
+![kljg](./images/kljg.PNG)
 
 Mrežni graf(dimenzija 3x3x3):
 
-![mg](./images/mg.png)
+![mg](./images/mg.PNG)
 
 Trivijalni graf:
 
-![tg](./images/tg.png)
+![tg](./images/tg.PNG)
 
 Modificirana Brouwerova hipoteza za Laplaceovu matricu povezanosti vrijedila je za svaki od navedenih grafova te za sve ostale na kojima je se testiranje provodilo.
