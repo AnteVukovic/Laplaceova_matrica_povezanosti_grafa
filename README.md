@@ -51,7 +51,7 @@ Klasična je Brouwerova hipoteza za Laplaceovu matricu zadana kao
 
 Slika
 
-gdje je m broj bridova grafa. Pri modifikaciji za Laplaceovu matricu povezanosti, m će predstavljati ukupan broj vršno disjunktnih puteva u grafu.
+gdje je m broj bridova grafa. Pri modifikaciji za Laplaceovu matricu povezanosti, m će predstavljati ukupan broj vršno disjunktnih puteva u grafu, a binomni će se koeficijent promijenti u t+3 povrh 4.
 
 Za provjeru Brouwerowe hipoteze koristi se funkcija
 
@@ -72,7 +72,7 @@ def sve(G: nx.Graph):
     return(brouwer(evl, P))
 ```
 
-Ta funkcija koristi pomoćnu funkciju Brouwer definiranu kao
+Ta funkcija koristi pomoćnu funkciju brouwer definiranu kao
 
 ```python
 def brouwer(evals, P):
@@ -85,3 +85,4 @@ def brouwer(evals, P):
             return False
     return True
 ```
+
