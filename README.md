@@ -25,3 +25,25 @@ Nakon toga unutar dokumenta treba dodati novu ćeliju koda s sljedećom naredbom
 Nakon pokretanja te ćelije klikom na gumb Execute cell može se redom pokretati ostale ćelije.
 
 ## Funkcije
+
+Prvo je potrebno definirati funkciju koja računa Laplaceovu matricu povezanosti za dani graf
+
+```python
+def LapConMatrix(G: nx.Graph):
+    nodes = list(G.nodes())
+    n = len(nodes)
+    P = np.zeros((n, n), dtype=int)
+    for i in range(n):
+        for j in range(i+1, n):
+            u, v = nodes[i], nodes[j]
+            num_paths = len(list(nx.node_disjoint_paths(G, u, v)))
+            P[i, j] = num_paths
+            P[j, i] = num_paths
+    sums = np.sum(P, axis=1)
+    D = np.diag(sums)
+    LC = D - P
+    return LC, P
+```
+
+Na koordinate (i, j) i (j, i) matrice P postavlja se broj vršno disjunktnih puteva između i-tog i j-og vrha grafa. 
+
