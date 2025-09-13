@@ -93,7 +93,7 @@ Na primjeru potpunog multipartitnog grafa sa skupovima veličina 1, 2 i 3 provje
 len(list(nx.node_disjoint_paths(G, 0, 5)))
 ```
 
-![vdp1](./images/vdp1.png)
+![vdp1](./images/vdp1.PNG)
 
 Dobija se da između nultog i petog vrha danoga grafa postoje 3 vršno disjunktna puta.
 
