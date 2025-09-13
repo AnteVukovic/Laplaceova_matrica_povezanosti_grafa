@@ -47,3 +47,41 @@ def LapConMatrix(G: nx.Graph):
 
 Na koordinate (i, j) i (j, i) matrice P postavlja se broj vršno disjunktnih puteva između i-tog i j-og vrha grafa. 
 
+Klasična je Brouwerova hipoteza za Laplaceovu matricu zadana kao
+
+Slika
+
+gdje je m broj bridova grafa. Pri modifikaciji za Laplaceovu matricu povezanosti, m će predstavljati ukupan broj vršno disjunktnih puteva u grafu.
+
+Za provjeru Brouwerowe hipoteze koristi se funkcija
+
+```python
+def sve(G: nx.Graph):
+    LC, P = LapConMatrix(G)
+    evals, evecs = eigh(LC)
+
+    evl = np.round(evals[::-1], 4)
+    evc = np.round(evecs, 4)
+    evl.sort()
+    dict={}
+    for eval in evl:
+        if eval in dict:
+            dict[eval]+=1
+        else:
+            dict[eval]=1
+    return(brouwer(evl, P))
+```
+
+Ta funkcija koristi pomoćnu funkciju Brouwer definiranu kao
+
+```python
+def brouwer(evals, P):
+    sumsv = 0
+    m = np.sum(np.triu(P, 1))
+    p_max = np.max(P)
+    for i in range(len(evals)):
+        sumsv += evals[i]
+        if sumsv > (m + comb(i+4, 4)):
+            return False
+    return True
+```
