@@ -111,3 +111,23 @@ Slika
 | 90  | 110   |
 | 120  | 145    |
 | 150  | 201    |
+
+Testiranje hipoteze provodilo se i za druge posebne vrste grafova.
+
+Binarno stablo:
+
+Slika
+
+Kružni ljestvasti graf:
+
+Slika
+
+Mrežni graf(dimenzija 3x3x3):
+
+Slika
+
+Trivijalni graf:
+
+Slika
+
+Modificirana Brouwerova hipoteza za Laplaceovu matricu povezanosti vrijedila je za svaki od navedenih grafova te za sve ostale na kojima je se testiranje provodilo.
