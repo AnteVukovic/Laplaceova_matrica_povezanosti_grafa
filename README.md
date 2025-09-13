@@ -12,7 +12,7 @@ Cilj ovog projekta je definirati i analizirati Laplaceovu matricu povezanosti gr
 
 Nakon što se otvori datoteka u kojoj se nalazi .ipynb dokument u VisualStudioCode-u, potrebno je odabrati kernel ili stvoriti novi klikom na gumb Select kernel u gornjem desnom kutu:
 
-Slika
+![kernel](./images/kernel.png)
 
 te Python enviroments > Create Python enviroment > Venv.
 
